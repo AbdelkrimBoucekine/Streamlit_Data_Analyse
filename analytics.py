@@ -33,11 +33,11 @@ for key in pgn_dict2.keys():
      pgn_dict[key] = pgn_dict2[key]
 
 # Informations de connexion pour la base de données NMEA
-AZUREUID_NMEA = 'abdel_test'
-AZUREPWD_NMEA = 'cZ4A9mPqRRYA'
-AZURESRV_NMEA = 'testdb.yacht-sentinel.com'
-AZUREDB_NMEA = 'nmeadb'
-TABLE = 'NmeaMessages'
+AZUREUID_NMEA = 'xxxxxxxxxxx'
+AZUREPWD_NMEA = 'xxxxxxxxxxxx'
+AZURESRV_NMEA = 'xxxxxxxxxxxxxxxx'
+AZUREDB_NMEA = 'xxxxxxxxxx'
+TABLE = 'xxxxxxxxxxxxxx'
 DRIVER = 'ODBC Driver 17 for SQL Server'
 
 connectionstring_template = 'mssql+pyodbc://{uid}:{password}@{server}:1433/{database}?driver={driver}'
@@ -52,10 +52,10 @@ connectionstring_nmea = connectionstring_template.format(
 engn_nmea = create_engine(connectionstring_nmea)
 
 # Informations de connexion pour la base de données principale
-AZUREUID_MAIN = 'abdel.read_only'
-AZUREPWD_MAIN = 'cZ4A9mPqRRYA'
-AZURESRV_MAIN = 'yachtsentinel.database.windows.net'
-AZUREDB_MAIN = 'yachtsentinel'
+AZUREUID_MAIN = 'xxxxxxxxxxx'
+AZUREPWD_MAIN = 'xxxxxxxxxxxxxx'
+AZURESRV_MAIN = 'xxxxxxxxxxxxxx'
+AZUREDB_MAIN = 'xxxxxxxxxxxx'
 
 connectionstring_main = connectionstring_template.format(
     uid=AZUREUID_MAIN,
