@@ -16,11 +16,11 @@ except FileNotFoundError:
     pgn_dict = {}
 
 # Informations de connexion
-AZUREUID = 'abdel_test'
-AZUREPWD = 'cZ4A9mPqRRYA'
-AZURESRV = 'testdb.yacht-sentinel.com'
-AZUREDB = 'nmeadb'
-TABLE = 'NmeaMessages'
+AZUREUID = 'xxxxxxxxxxx'
+AZUREPWD = 'xxxxxxxxxxx'
+AZURESRV = 'xxxxxxxxxxxxx'
+AZUREDB = 'xxxxxxxxxxxxx'
+TABLE = 'xxxxxxxxxxxxxxxxxx'
 DRIVER = 'ODBC Driver 17 for SQL Server'
 
 # Chaîne de connexion
