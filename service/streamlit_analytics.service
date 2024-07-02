@@ -1,0 +1,12 @@
+[Unit]
+Description=Streamlit Service
+After=network.target
+
+[Service]
+User=streamlit
+WorkingDirectory=/opt/streamlit_analytics
+ExecStart=/opt/streamlit_analytics/venv/bin/python -m streamlit run analytics.py --server.port 8500
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
